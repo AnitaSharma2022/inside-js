@@ -6,7 +6,9 @@ console.log('-- begin --');
 // write the function to pass the assertions
 // fill in the documentation to describe the function
 
-const scramble = () => {};
+const scramble = (param1,param2,param3) => {
+  return param3+param1+param2;
+};
 
 const _1_expect = 'yxz';
 const _1_actual = scramble('x', 'z', 'y');
@@ -19,5 +21,24 @@ console.assert(_2_actual === _2_expect, 'Test 2');
 const _3_expect = 'yzx';
 const _3_actual = scramble('z', 'x', 'y');
 console.assert(_3_actual === _3_expect, 'Test 3');
+
+
+function isLegalAge(age) {
+  return age >= 18 ? true : false;
+}
+
+function canDrive(age)
+{
+  if(isLegalAge(age))
+  {
+    console.log("You can drive");
+  }
+  else
+  {
+    console.log("you cannot drive");
+  }
+}
+canDrive(20);
+
 
 console.log('-- end --');
